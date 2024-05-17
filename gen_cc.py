@@ -36,7 +36,7 @@ def create_country_code_sticker(country_code, size=(300, 200), bg_color='white',
 
     return img
 
-output_dir = 'country_code_imgs'
+output_dir = 'cc_imgs'
 os.makedirs(output_dir, exist_ok=True)
 
 countries = list(pycountry.countries)
