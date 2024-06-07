@@ -45,4 +45,4 @@ for country in countries:
     img = create_country_code_sticker(country_code)
     output_path = os.path.join(output_dir, f'{country_code.upper()}.png')
     img.save(output_path)
-    print(f'Saved graphic for {country_code.lower()}')
+    print(f'Saved graphic for {country_code.upper()}')
