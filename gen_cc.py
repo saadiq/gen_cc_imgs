@@ -43,6 +43,6 @@ countries = list(pycountry.countries)
 for country in countries:
     country_code = country.alpha_2
     img = create_country_code_sticker(country_code)
-    output_path = os.path.join(output_dir, f'{country_code.lower()}.png')
+    output_path = os.path.join(output_dir, f'{country_code.upper()}.png')
     img.save(output_path)
     print(f'Saved graphic for {country_code.lower()}')
