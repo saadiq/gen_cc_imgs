@@ -45,4 +45,12 @@ for country in countries:
     img = create_country_code_sticker(country_code)
     output_path = os.path.join(output_dir, f'{country_code.upper()}.png')
     img.save(output_path)
-    print(f'Saved graphic for {country_code.upper()}')
+    # print(f'Saved graphic for {country_code.upper()}')
+    ipfs_path = f"ipfs://QmUiNtUCW1LUJwpSMhxbUowS5333bmBvrY8fAfEunL1V8G/{country_code.upper()}.png"
+    print(f'''        wanderMarks.artManager().addArtItem(
+            "{ipfs_path}",
+            0.001 ether,
+            "{country_code}",
+            address(this)
+        );''')
+
